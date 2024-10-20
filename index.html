@@ -5,26 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dilshan's Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
+
     <!-- Header -->
     <header class="header">
-        <div class="logo">Dilshan P M</div>
         <nav>
+            <a href="#home">Home</a> <!-- New Home link -->
             <a href="#about">About</a>
             <a href="#projects">Projects</a>
             <a href="#skills">Skills</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
-
+    
     <!-- Hero Section -->
-    <section class="hero-section">
+    <section id="home" class="hero-section">
         <img src="img.jpg" alt="Profile Image" class="profile-image">
         <div class="text-content">
-            <h1 class="title">Hello, I'm Dilshan P M</h1>
+            <h1 class="title">Hello, I'm Dilshan.</h1>
             <h2 class="subtitle">Full Stack Web Developer</h2>
-            <a href="#contact" class="cta-button">Get in Touch</a>
+            <div class="cta-buttons">
+                <a href="#projects" class="cta-button primary">View My Work</a>
+                <a href="#contact" class="cta-button secondary">Get in Touch</a>
+            </div>
         </div>
     </section>
 
@@ -32,19 +37,26 @@
     <section id="about" class="section">
         <h2 class="section-title">About Me</h2>
         <div class="section-content">
-            <p>I am currently pursuing a Master's in Computer Applications at Cochin University of Science and Technology (CUSAT). With a solid foundation in programming languages like Java, Python, and C, I am passionate about cybersecurity and data science, constantly looking for hands-on opportunities to expand my expertise.</p>
+            <p>Aspiring and dedicated individual currently pursuing Masters in Computer Applications degree at Cochin University of
+                Science and Technology (CUSAT). Recently completed Bachelor of Science in Computer Science, gaining a solid
+                foundation in programming languages, data structures, and software development. Throughout my academic journey, I
+                have demonstrated a proactive approach to problem-solving. I am eager to further expand my knowledge and skills in
+                computer science, particularly in cyber security, through practical experience and hands-on learning opportunities.</p>
+            <p>Thank you for taking the time to review my portfolio. I am eager to establish connections and engage in discussions about potential opportunities within the technology sector.</p>
+            <a href="resume.pdf" class="download-resume" target="_blank">Download Resume <i class="fas fa-download"></i></a>
+
         </div>
     </section>
 
     <!-- Projects Section -->
     <section id="projects" class="section">
         <h2 class="section-title">Projects</h2>
-        <div class="section-content">
+        <div class="section-content projects-grid">
             <div class="project-card">
                 <h3>AlumiNate</h3>
                 <p>An alumni management system connecting alumni with their alma mater, built with NodeJS, Handlebars, and MongoDB.</p>
-                <div class="more">
-                    <p><a href="https://github.com/dilshan-pm/alumni-management-system" target="_blank">View on GitHub</a></p>
+                <div class="project-links">
+                    <a href="https://github.com/dilshan-pm/alumni-management-system" target="_blank" class="project-link"><i class="fab fa-github"></i> View Code on GitHub</a>
                 </div>
             </div>
         </div>
@@ -54,14 +66,27 @@
     <section id="skills" class="section">
         <h2 class="section-title">Skills</h2>
         <div class="section-content">
-            <div class="skills">
-                <span class="skill-chip">Java</span>
-                <span class="skill-chip">Python</span>
-                <span class="skill-chip">C</span>
-                <span class="skill-chip">JavaScript</span>
-                <span class="skill-chip">HTML</span>
-                <span class="skill-chip">CSS</span>
-                <span class="skill-chip">MongoDB</span>
+            <div class="skills-container">
+                <div class="skills">
+                    <img src="images/JavaScript-logo.png" alt="JavaScript" class="skill-icon">
+                    <img src="images/python.png" alt="Python" class="skill-icon">
+                    <img src="images/java.png" alt="Java" class="skill-icon">
+                    <img src="images/html.png" alt="HTML" class="skill-icon">
+                    <img src="images/css.png" alt="CSS" class="skill-icon">
+                    <img src="images/letter-c.png" alt="C" class="skill-icon">
+                    <img src="images/database.png" alt="MongoDB" class="skill-icon">
+                    <img src="images/react.png" alt="React" class="skill-icon">
+
+                    <img src="images/JavaScript-logo.png" alt="JavaScript" class="skill-icon">
+                    <img src="images/python.png" alt="Python" class="skill-icon">
+                    <img src="images/java.png" alt="Java" class="skill-icon">
+                    <img src="images/html.png" alt="HTML" class="skill-icon">
+                    <img src="images/css.png" alt="CSS" class="skill-icon">
+                    <img src="images/letter-c.png" alt="C" class="skill-icon">
+                    <img src="images/database.png" alt="MongoDB" class="skill-icon">
+                    <img src="images/react.png" alt="React" class="skill-icon">
+                    <!-- Add more skill images as needed -->
+                </div>
             </div>
         </div>
     </section>
@@ -69,12 +94,12 @@
     <!-- Contact Section -->
     <section id="contact" class="section">
         <h2 class="section-title">Get in Touch</h2>
-        <p>If you'd like to collaborate or learn more, feel free to reach out!</p>
+        <p>For additional inquiries or collaboration projects, please do not hesitate to contact.</p>
         <form id="contactForm">
           <label for="name">Name</label>
           <input type="text" id="name" required>
     
-          <label for="email">Email</label>
+          <label for="email">E-mail</label>
           <input type="email" id="email" required>
     
           <label for="message">Message</label>
@@ -84,12 +109,15 @@
           <br>
           
         </form>
-        <div class="social-links">
-          <a href="https://github.com/nandakumar-dot">GitHub</a>
-          <a href="https://linkedin.com/in/nandakumardot">LinkedIn</a>
-        </div>
         <div>
-            <p id="thank-you-message" style="display:none;">Thank you for your message!</p>
+            <p id="thank-you-message" style="display:none;">Thank you for your message. Will get back to you soon.!!</p>
+        </div>
+        <div class="social-links">
+          <a href="https://github.com/dilshan-pm">GitHub</a>
+          <a href="https://www.linkedin.com/in/dilshan-pm-39259a286/">LinkedIn</a>
+          <a href="https://www.instagram.com/dilxhan/">Instagram</a>
+          <a href="https://wa.me/9061369250">WhatsApp</a>
+
         </div>
     </section>
 
